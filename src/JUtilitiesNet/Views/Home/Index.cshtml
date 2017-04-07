@@ -1,0 +1,73 @@
+﻿@model List<JUtilitiesNet.Models.Video>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+<div id= "Deco_Bar" class="col-md-1">Hi?</div>
+
+@*Main content section*@
+
+
+<div class="col-md-11" tag="main_content">
+    
+    <div class="row" tag="Video_Find">
+        <form asp-action="addVideo" asp-controller="Home" validate>
+
+            <input name="vidURL" type="url" placeholder="Search for a video" required/>
+            <input type="submit" value="Search" />
+
+        </form>
+    </div>
+
+    <div class="row" tag="Video_Preview">
+        @{ 
+            string previewID = null;
+            string previewSrc = "";
+            if (Model.Count != 0)
+            {
+                previewID = (Model.ElementAt(0)).id;
+                previewSrc = "https://www.youtube-nocookie.com/embed/" + previewID + "?rel=0?ecver=1";
+            }
+        }
+        <iframe width="560" height="315" src=@previewSrc frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="row" tag="DownLoad_Rslt">
+        <input type="button" value="Download" />
+    </div>
+
+    <div class="row" tag="Video History">
+        <table>
+            @{int index = 0; }
+            @foreach (var vid in Model)
+            {
+                <tr>
+                    <td>@vid.info.Title</td>
+                    
+                    <td>
+                        <form asp-action="RemoveVideo" asp-controller="Home">
+                            <input type="text" name="index" value=@index hidden/>
+                            <input type="submit" value="Delete"/>
+
+                            <!--<button type="submit" value=@index>Delete</button>-->
+                            <!--<a href="/Home/RemoveVideo/@index">Delete</a>-->
+                        </form>
+                    </td>
+
+                    <td>
+                        <form asp-action="SelectVideo" asp-controller="Home">
+                            <input type="text" name="index" value=@index hidden />
+                            <input type="submit" value="Open" />
+                            
+                            <!--<button type="submit" value=@index>Open</button>-->
+                        </form>
+                    </td>
+                    
+                </tr>
+                index++;
+            }
+        </table>
+        
+    </div>
+    
+    
+    
+</div>
