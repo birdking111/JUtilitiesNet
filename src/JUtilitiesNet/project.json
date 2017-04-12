@@ -18,9 +18,9 @@
     "Microsoft.Extensions.Logging.Console": "1.1.1",
     "Microsoft.Extensions.Logging.Debug": "1.1.1",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.1",
-    "Microsoft.NETCore.App": "1.1.1",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.1.0",
-    "System.Runtime.Extensions": "4.3.0"
+    "System.Runtime.Extensions": "4.3.0",
+    "Newtonsoft.Json": "10.0.2"
   },
 
   "tools": {
@@ -29,11 +29,22 @@
   },
 
   "frameworks": {
+
     "netcoreapp1.0": {
       "imports": [
         "dotnet5.6",
         "portable-net45+win8"
-      ]
+      ],
+      "dependencies": {
+        "Microsoft.NETCore.App": "1.1.1"
+      }
+    },
+    "net452": {
+      "dependencies": {
+        "JUTilitiesService": {
+          "target": "project"
+        }
+      }
     }
   },
 
@@ -46,6 +57,14 @@
     "configProperties": {
       "System.GC.Server": true
     }
+  },
+
+  "runtimes": {
+    "win10-x64": {},
+    "win81-x64": {},
+    "win8-x64": {},
+    "win7-x64": {},
+    "win7-x86": {}
   },
 
   "publishOptions": {

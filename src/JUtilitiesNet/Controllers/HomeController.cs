@@ -8,6 +8,7 @@ using JUtilitiesNet.Models;
 using YoutubeExtractor;
 using System.Text.RegularExpressions;
 
+
 namespace JUtilitiesNet.Controllers
 {
     public class HomeController : Controller
@@ -88,7 +89,7 @@ namespace JUtilitiesNet.Controllers
             return vidID;
         }
 
-        /*public void downloadVideo()
+        public void downloadVideo()
         {
             //begin by getting the selected video, aka history at slot 0
             VideoInfo vid = history.ElementAt(0).info;
@@ -99,10 +100,15 @@ namespace JUtilitiesNet.Controllers
                 DownloadUrlResolver.DecryptDownloadUrl(vid);
             }
 
-            //set up a video downloader
-            var videoDownloader = new VideoDownloader(vid, 
-                Path.Combine( Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
-        }*/
+            //before processing, make sure to hide the button
+            //OR make a modal that blocks the screen from the user
+
+            //call to download, wait for the download to finish
+            
+
+            //unhide button after video finishes
+            //OR remove the modal
+        }
 
         private static string RemoveIllegalPathCharacters(string path)
         {
