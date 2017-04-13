@@ -104,7 +104,11 @@ namespace JUtilitiesNet.Controllers
             //OR make a modal that blocks the screen from the user
 
             //call to download, wait for the download to finish
-            
+            var videoDownloader = new VideoDownloader(vid,
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                RemoveIllegalPathCharacters(vid.Title) + vid.VideoExtension));
+
+            videoDownloader.Execute();
 
             //unhide button after video finishes
             //OR remove the modal

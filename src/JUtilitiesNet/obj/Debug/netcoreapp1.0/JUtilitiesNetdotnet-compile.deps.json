@@ -16,6 +16,7 @@
     ".NETCoreApp,Version=v1.0": {
       "JUtilitiesNet/1.0.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": "1.1.1",
           "YoutubeExtractor": "0.10.11",
           "BundlerMinifier.Core": "2.4.337",
           "Microsoft.AspNetCore.Diagnostics": "1.1.1",
@@ -30,9 +31,7 @@
           "Microsoft.Extensions.Logging.Console": "1.1.1",
           "Microsoft.Extensions.Logging.Debug": "1.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.1",
-          "Microsoft.NETCore.App": "1.1.1",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.1.0",
-          "System.Runtime.Extensions": "4.3.0",
           "Newtonsoft.Json": "10.0.2"
         },
         "compile": {
@@ -2563,6 +2562,7 @@
     ".NETCoreApp,Version=v1.0/": {
       "JUtilitiesNet/1.0.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": "1.1.1",
           "YoutubeExtractor": "0.10.11",
           "BundlerMinifier.Core": "2.4.337",
           "Microsoft.AspNetCore.Diagnostics": "1.1.1",
@@ -2577,9 +2577,7 @@
           "Microsoft.Extensions.Logging.Console": "1.1.1",
           "Microsoft.Extensions.Logging.Debug": "1.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.1",
-          "Microsoft.NETCore.App": "1.1.1",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.1.0",
-          "System.Runtime.Extensions": "4.3.0",
           "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {

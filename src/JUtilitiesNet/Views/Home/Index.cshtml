@@ -31,7 +31,9 @@
     </div>
 
     <div class="row" tag="DownLoad_Rslt">
-        <input type="button" value="Download" />
+        <form asp-action="downloadVideo" asp-controller="Home">
+            <input type="button" value="Download" />
+        </form>
     </div>
 
     <div class="row" tag="Video History">
