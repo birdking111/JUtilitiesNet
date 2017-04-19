@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "JUtilitiesNet", "src\JUtilitiesNet\JUtilitiesNet.xproj", "{04A14F7B-78A2-4341-B51B-7E35EAB19528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JUTilitiesService", "..\ConsoleApplication1\ConsoleApplication1\JUTilitiesService.csproj", "{C78C2F3D-C048-48FE-A42A-448C10DB99B9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,10 +22,6 @@ Global
 		{04A14F7B-78A2-4341-B51B-7E35EAB19528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04A14F7B-78A2-4341-B51B-7E35EAB19528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04A14F7B-78A2-4341-B51B-7E35EAB19528}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C78C2F3D-C048-48FE-A42A-448C10DB99B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C78C2F3D-C048-48FE-A42A-448C10DB99B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C78C2F3D-C048-48FE-A42A-448C10DB99B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C78C2F3D-C048-48FE-A42A-448C10DB99B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
